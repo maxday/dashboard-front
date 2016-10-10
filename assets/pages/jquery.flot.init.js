@@ -335,13 +335,13 @@
 	//initializing various charts and components
 	FlotChart.prototype.init = function() {
 		//plot graph data
-		var uploads = [[0, 9], [1, 8], [2, 5], [3, 8], [4, 5], [5, 14], [6, 10],[7, 8], [8, 5], [9, 14], [10, 10]];
+		var uploads = [[1, 8], [2, 5], [3, 8], [4, 5], [5, 14], [6, 10],[7, 8]];
 		var downloads = [[0, 5], [1, 12], [2, 4], [3, 3], [4, 12], [5, 11], [6, 14],[7, 12], [8, 8], [9, 4], [10, 8]];
-		var plabels = ["Visits", "Page views"];
+		var plabels = ["", "Page views"];
 		var pcolors = ['#188ae2', '#10c469'];
 		var borderColor = '#f5f5f5';
 		var bgColor = '#fff';
-		this.createPlotGraph("#website-stats", uploads, downloads, plabels, pcolors, borderColor, bgColor);
+		this.createPlotGraph("#website-stats", uploads, null, plabels, pcolors, borderColor, bgColor);
 
 		//Pie graph data
 		var pielabels = ["Series 1", "Series 2", "Series 3"];
@@ -499,4 +499,3 @@ $(document).ready(function() {
 		$.plot($("#ordered-bars-chart"), ds, options);
 	});
 });
-

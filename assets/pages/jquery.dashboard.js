@@ -63,25 +63,25 @@
 
         //creating bar chart
         var $barData  = [
-            { y: 'j-1', a: 1250 },
-            { y: 'j-2', a: 1075 },
-            { y: 'j-3', a: 9033 },
+            { y: 'j-7', a: 1250 },
+            { y: 'j-6', a: 1075 },
+            { y: 'j-5', a: 9033 },
             { y: 'j-4', a: 600 },
-            { y: 'j-5', a: 1235 },
-            { y: 'j-6', a: 3420 },
-            { y: 'j-7', a: 3590 }
+            { y: 'j-3', a: 1235 },
+            { y: 'j-2', a: 3420 },
+            { y: 'j-1', a: 3590 }
         ];
         this.createBarChart('morris-bar-example', $barData, 'y', ['a'], ['Statistics'], ['#188ae2']);
 
         //create line chart
         var $data  = [
-            { y: '1', a: 1250 },
-            { y: '2', a: 900 },
-            { y: '3', a: 1220 },
-            { y: '4', a: 1230 },
-            { y: '5', a: 1030 },
-            { y: '6', a: 1220 },
-            { y: '7', a: 1250 }
+            { y: 1, a: 1250 },
+            { y: 2, a: 900 },
+            { y: 3, a: 1220 },
+            { y: 4, a: 1230 },
+            { y: 5, a: 1030 },
+            { y: 6, a: 1220 },
+            { y: 7, a: 1250 }
           ];
         this.createLineChart('morris-line-example', $data, 'y', 'a', ['Cours de  l\'action'],['0.9'],['#ffffff'],['#999999'], ['#10c469','#188ae2']);
 
