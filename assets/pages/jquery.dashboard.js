@@ -57,47 +57,47 @@
             colors: colors
         });
     },
-    
-    
+
+
     Dashboard1.prototype.init = function() {
 
         //creating bar chart
         var $barData  = [
-            { y: '2010', a: 75 },
-            { y: '2011', a: 42 },
-            { y: '2012', a: 75 },
-            { y: '2013', a: 38 },
-            { y: '2014', a: 19 },
-            { y: '2015', a: 93 }
+            { y: 'j-1', a: 1250 },
+            { y: 'j-2', a: 1075 },
+            { y: 'j-3', a: 9033 },
+            { y: 'j-4', a: 600 },
+            { y: 'j-5', a: 1235 },
+            { y: 'j-6', a: 3420 },
+            { y: 'j-7', a: 3590 }
         ];
         this.createBarChart('morris-bar-example', $barData, 'y', ['a'], ['Statistics'], ['#188ae2']);
 
         //create line chart
         var $data  = [
-            { y: '2008', a: 50, b: 0 },
-            { y: '2009', a: 75, b: 50 },
-            { y: '2010', a: 30, b: 80 },
-            { y: '2011', a: 50, b: 50 },
-            { y: '2012', a: 75, b: 10 },
-            { y: '2013', a: 50, b: 40 },
-            { y: '2014', a: 75, b: 50 },
-            { y: '2015', a: 100, b: 70 }
+            { y: '1', a: 1250 },
+            { y: '2', a: 900 },
+            { y: '3', a: 1220 },
+            { y: '4', a: 1230 },
+            { y: '5', a: 1030 },
+            { y: '6', a: 1220 },
+            { y: '7', a: 1250 }
           ];
-        this.createLineChart('morris-line-example', $data, 'y', ['a','b'], ['Series A','Series B'],['0.9'],['#ffffff'],['#999999'], ['#10c469','#188ae2']);
+        this.createLineChart('morris-line-example', $data, 'y', 'a', ['Cours de  l\'action'],['0.9'],['#ffffff'],['#999999'], ['#10c469','#188ae2']);
 
         //creating donut chart
         var $donutData = [
-                {label: "Download Sales", value: 12},
-                {label: "In-Store Sales", value: 30},
-                {label: "Mail-Order Sales", value: 20}
+                {label: "Positif", value: 502},
+                {label: "Négatif", value: 129},
+                {label: "Neutre", value: 59}
             ];
-        this.createDonutChart('morris-donut-example', $donutData, ['#ff8acc', '#5b69bc', "#35b8e0"]);
+        this.createDonutChart('morris-donut-example', $donutData, ['#18B340', '#C92F33', "#FFB22F"]);
     },
     //init
     $.Dashboard1 = new Dashboard1, $.Dashboard1.Constructor = Dashboard1
 }(window.jQuery),
 
-//initializing 
+//initializing
 function($) {
     "use strict";
     $.Dashboard1.init();
